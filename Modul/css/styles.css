@@ -1,0 +1,238 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family:sans-serif;
+    background: #fff;
+    margin: 0 auto;
+}
+body *{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 30px 0 30px;
+    color: #909090;
+}
+header{
+    height: 104px;
+    padding: 24px 30px 36px 30px;
+    width: 100%;
+}
+.holder{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo, .form{
+    padding-top: 25px;
+}
+input{
+    height: 40px;
+    width: 390px;
+    background: #f3f3f3;
+    border: 1px solid #e5e5e5;
+    font-size: 1.6rem;
+    color: #c7c5c5;
+
+}
+
+.fa-search{
+    color: #c7c5c5;
+}
+img{
+    width: auto;
+    max-width: 100%;
+}
+.banner{
+    width: 100%;
+    background: #2f3943;
+    display: flex;
+}
+.banner img{
+    margin: 0 auto;
+}
+.circle{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 80px 0 80px 0;
+}
+.circle article{
+    width: 30%;
+    text-align: center;
+}
+.first-circle{
+    border-radius: 93px;
+    height: 186px;
+    width: 186px;
+    background: #5094f2;
+    margin: 0 auto;
+}
+.second-circle{
+    background: #d94748;
+    border-radius: 93px;
+    height: 186px;
+    width: 186px;
+    margin: 0 auto;
+}
+.third-circle{
+    background: #ebbb11;
+    border-radius: 93px;
+    height: 186px;
+    width: 186px;
+    margin: 0 auto;
+}
+.circle i{
+    color: #fff;
+    font-size: 10rem;
+    display: flex;
+    justify-content:center;
+    padding: 43px;
+}
+h3{
+    font-size: 2.4rem;
+    color: #5094f2;
+}
+p{
+    font-size: 1.6rem;
+    color: #909090;
+    font-weight: normal;
+}
+h1{
+    font-size: 3.6rem;
+    font-weight: normal;
+    color: #6f7173;
+}
+section{
+    display: flex;
+    margin-bottom: 60px;
+}
+.left-block{
+     width: 50%;
+ }
+.left-block a{
+    color:  #4364a1;
+    font-size: 200px;
+    margin: 0 135px;
+}
+
+.right-block{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.right-block p{
+    line-height: 2;
+}
+h2{
+    font-size: 3rem;
+    font-weight: normal;
+    color: #6f7173;
+}
+address{
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0 40px 0;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #909090;
+    text-align: center;
+    font-style: normal;
+}
+
+
+@media screen and (max-width: 769px){
+    .wrapper{
+        max-width: 769px;
+    }
+    header{
+
+        height: 89px;
+        padding: 22px 30px 23px 30px;
+    }
+    input{
+        width: 200px;
+    }
+    .banner img{
+        display: flex;
+    }
+    h3{
+        font-size: 3.6rem;
+        color: #5094f2;
+    }
+    p{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 4.8rem;
+        text-align: center;
+        padding: 42px 0 24px 0;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .circle{
+        display: flex;
+        flex-direction: column;
+    }
+    .circle article{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+
+    }
+    .first-circle{
+        display: block;
+        float: left;
+        border-radius: 68px;
+        height: 136px;
+        width: 136px;
+        background: #5094f2;
+        margin: 0;
+    }
+
+    .second-circle{
+        background: #d94748;
+        border-radius: 68px;
+        height: 136px;
+        width: 136px;
+    }
+    .third-circle{
+        background: #ebbb11;
+        border-radius: 68px;
+        height: 136px;
+        width: 136px;
+        margin: 0 auto;
+    }
+    .circle i{
+        font-size: 80px;
+        padding: 27px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-block a{
+        font-size: 160px;
+        text-align: center;
+        margin: 0 67px;
+
+    }
+    h2{
+        text-align: left;
+        font-size: 3.6rem;
+        padding: 24px 30px 30px 30px;
+    }
+    .right-block{
+        width: 100%;
+    }
+    .right-block p{
+        font-size: 1.8rem;
+    }
+    address{
+        font-size: 1.6rem;
+    }
+}
