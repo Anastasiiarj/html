@@ -1,0 +1,16 @@
+.block-left, .block-right{
+    background-color: #EBEBEB;
+    height: 100vh;
+}
+.block-center{
+    background-color: #ffffff;
+    margin-top: 55px;
+}
+.carousel-item img{
+    max-width: 30%;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.carousel-item{
+    text-align: center;
+}
