@@ -1,0 +1,341 @@
+@media screen and (min-width: 1200px) {
+	/* --- page ABOUT --- */
+	.power__icon_expand{
+		display: none;
+	}
+
+	/* --- page CONTACTS --- */
+	.map{
+		position: relative;
+	}
+	.location{
+		position: absolute;
+		top: 52px; /*-400px*/
+		right: 8%;  /* 137% */
+	}
+	.contact-address{
+		position: relative;
+	}
+	.contact-address:before{
+		content: '';
+		position: absolute;
+		border: 25px solid transparent;
+		border-right: 25px solid rgba(124, 132, 147, .75);
+		top: 15px;
+		left: -50px;
+	}
+}
+
+/* 992 - 1199 px col-lg- */
+@media screen and (max-width: 1199px) {
+	.btn__phone{
+		margin-left: -28px;
+	}
+	.power__photo{
+		height: 210px;
+	}
+
+	/* --- page ABOUT --- */
+	.power__icon_expand{
+		display: none;
+	}
+	
+
+	/* --- page SERVICES --- */
+	.support__photo{
+		width: 192px;
+	}
+	.support__text{
+		width: auto;
+	}
+
+	/* --- page CONTACTS --- */
+	.map{
+		position: relative;
+	}
+	.location{
+		position: absolute;
+		top: 52px; 
+		right: 8%; 
+	}
+	.contact-address{
+		position: relative;
+	}
+	.contact-address:before{
+		content: '';
+		position: absolute;
+		border: 25px solid transparent;
+		border-right: 25px solid rgba(124, 132, 147, .75);
+		top: 15px;
+		left: -50px;
+	}
+
+}
+
+/* 768 - 991 px col-md- */
+@media screen and (max-width: 991px) {
+ 	.hamburger{
+ 		margin-top: 18px;
+ 	}
+ 	.hamb-menu{
+ 		margin-top: 33px;
+ 		width: 300px;
+ 	}
+ 	.details__item{
+ 		margin-bottom: 44px;
+ 	}
+ 	.btn__info{
+		margin-bottom: 48px;
+	}
+	.news__item{
+		border-bottom: none;
+		position: relative;
+	}
+	.news__item:after{
+		content: '';
+		border-bottom: 1px solid rgba(255, 255, 255, .1);
+		width: 268px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.info__item:last-child{
+		margin-top: 42px;
+	}
+	.btn__phone{
+		margin-left: auto;
+	}
+	.logo__footer img{
+		margin-top: 42px;
+	}
+	.news__info{
+		width: auto;
+	}
+
+	/* --- page ABOUT --- */
+	.section__title{
+		text-align: center;
+	}
+	.breadcrumb__list{
+		justify-content: center;
+	}
+	.power__photo{
+		height: 150px;
+	}
+	.power__icon_arrow{
+		display: none;
+	}
+	.power__icon_expand{
+		display: block;
+	}
+
+	/* --- page SERVICES --- */
+	.support__photo{
+		width: 207px;
+	}
+	.consult{
+		width: 100%;
+		margin-bottom: 87px;
+	}
+
+	/* --- page CONTACTS --- */
+	.location{
+		position: static; 
+	}
+	.contact-address{
+		width: auto;
+		margin: 22px 0 25px;
+	}
+	.contact-text{
+		width: 370px;
+	}
+	.contact-address:before{
+		display: none;
+	}
+}
+
+/* 576 - 767 px col-sm- */
+@media screen and (max-width: 767px) {
+	/* .main-menu{
+		display: none;
+	} */
+	.hamb-menu{
+		width: 100%;
+	}
+	h1{
+		font-size: 45px;
+	}
+	h2, h3{
+		font-size: 25px;
+	}
+	.offer__subtitle{
+		width: 415px;
+	}
+	.info__item{
+		margin-bottom: 30px;
+	}
+	.details__item{
+		margin-bottom: 46px;
+	}
+	.news__info{
+		width: 100%;
+		padding-top: 10px;
+	}
+	.mission__info{
+		flex-direction: column;
+	}
+	.mission__block_long,
+	.mission__block_short{
+		width: 100%
+	}
+	.news__item:after{
+		width: 100%;
+	}
+	.logo__footer img{
+		margin: 43px 0 35px;
+	}
+
+	/* --- page ABOUT --- */
+	.page-menu{
+		margin-left: -16px;
+	} 
+	.page__link{
+		padding: 10px 10px 12px 13px;
+	}
+	.advantage__text{
+		margin-bottom: 20px;
+	}
+	.advantage-info{
+		padding-bottom: 33px;
+	}
+	.advantage__icon{
+		margin-bottom: 35px;
+	}
+	.power__photo{
+		height: 510px;
+	}
+	.page__item{
+		margin-bottom: 27px;
+	}
+
+	.footer-menu__titel{
+		text-align: center;
+	}
+	.footer-menu__list{
+		text-align: center;
+		margin-bottom: 42px;
+	}
+	.footer-bottom{
+		text-align: center;
+		margin: 0 auto;
+	}
+	.logo__footer img{
+		margin-bottom: 19px;
+	}
+	.address__text_long{
+		margin: 0 auto;
+		margin-bottom: 29px;
+	}
+	.address,
+	.address__text_short,
+	.credits__text,
+	.credits__text_border{
+		margin: 0 auto;
+	}
+	.credits__info{
+		text-align: start;
+	}
+	.credits__item{
+		justify-content: center;
+	}
+	.btn__phone_footer{
+		margin: 44px auto 42px;
+	}
+
+	/* --- page SERVICES --- */
+	.page__list{
+		flex-direction: column;
+		text-align: center;
+	}
+	.support__heading,
+	.support__text{
+		text-align: center;		
+	}
+	.support__heading{		
+		margin: 0 auto 16px;
+	}
+	.support__photo{
+		margin: 0 auto 28px;	
+	}
+
+	/* --- page CONTACT --- */
+	.contact-address{
+		margin: 18px 0 19px;
+	}
+	.contact-info{
+		flex-direction: column;
+	}
+	.contact-text{
+		margin-top: 25px;
+	}
+
+}
+
+/* 320 - 575 px col- */
+@media screen and (max-width: 575px) {
+	.btn__phone{
+ 		width: 125px; 
+ 		font-size: 12px;
+ 		padding-top: 9px;
+ 		padding-left: 7px;
+ 		margin-top: 5px;
+ 	}
+ 	.hamburger i{
+ 		margin-top: -7px;
+ 	}
+ 	.logo img{
+ 		margin-top: 10px;
+ 	}
+ 	h1{
+ 		font-size: 40px;
+ 	}
+ 	.offer__subtitle{
+ 		width: auto;
+ 	}
+	.btn__info{
+		margin-bottom: 40px;
+	}
+	.btn__phone_footer{
+		margin-top: 44px;
+	}
+	.hamb-menu{
+		margin-top: 40px;
+	}
+
+	/* --- page ABOUT --- */
+	.page__list{
+		flex-direction: column;
+		text-align: center;
+	}
+	.page__link{
+		padding: 13px 15px;
+	}
+	
+	.power__photo{
+		height: 290px;
+	}
+
+	/* --- page SERVICES --- */
+	.consult__phone{
+		margin-top: 15px;
+		display: block;
+	}
+	.consult__img{
+		display: none;
+	}
+
+	/* --- page CONTACT --- */
+	.contact-text{
+		width: auto;
+	}
+}
