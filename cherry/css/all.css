@@ -156,6 +156,9 @@ a{
 button, input, select{
 	font-family: 'Arial', sans-serif;
 }
+button{
+	cursor: pointer;
+}
 .d-flex{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -180,6 +183,14 @@ button, input, select{
 }
 .cherry-light{
 	color: #d08b98;
+}
+a.logo{
+	text-decoration: none;
+}
+.logo-title{
+	font-size: 30px;
+	font-weight: bold;
+	color: #a5adb8;
 }
 .logo-subtitle{
 	font-size: 12px;
