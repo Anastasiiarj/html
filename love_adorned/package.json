@@ -14,5 +14,6 @@
     "grunt-spritesmith": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
