@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "love_adorned",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
+  "repository": {
+  	"url": "git://github.com/html/love_adorned.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.3",
