@@ -15,5 +15,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
