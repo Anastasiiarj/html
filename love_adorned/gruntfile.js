@@ -1,8 +1,13 @@
 module.exports = function(grunt) {
 
+    require('load-grunt-tasks')(grunt);
+
+    var PathConfig = require('./grunt-settings.js');
+
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
+        config: PathConfig,
 
         // Sprites
         sprite: {
@@ -58,8 +63,27 @@ module.exports = function(grunt) {
                 files: ['js/**/*'],
                 tasks: ['uglify']
             }
-        }
+        },
 
+        'sftp-deploy': {
+          build: {
+            auth: {
+              host: '<%= config.sftpServer %>',
+              port: '<%= config.sftpPort %>',
+              authKey: {
+                        "username": "<%= config.sftpLogin %>",
+                        "password": "<%= config.sftpPas %>"
+                      }
+            },
+            cache: 'sftpCache.json',
+            src: 'css',
+            dest: '<%= config.sftpDestination %>',
+            //exclusions: ['/path/to/source/folder/**/.DS_Store', '/path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
+            serverSep: '/',
+            concurrency: 4,
+            progress: true
+          }
+        }
     });
 
     // Load plugins
@@ -67,6 +91,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+
+    // upload to server
+    grunt.registerTask('sftp', ['sftp-deploy']);
 
     // Default task
     grunt.registerTask('default', 'build');
