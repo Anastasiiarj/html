@@ -1,0 +1,36 @@
+@import '../helpers/variables';
+
+.header {
+    background-color: $white;
+    letter-spacing: 0.02em;
+    @media (min-width: 768px) {
+        height: 88px;
+    }
+
+    .holder {
+        max-width: 1480px;
+    }
+
+    .navbar-brand {
+        margin-right: 46px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        line-height: 145%;
+    }
+
+    .notice {
+        margin-right: 40px;
+    }
+
+    .user {
+        font-size: 13px;
+        line-height: 145%;
+        color: $black;
+
+        &-avatar {
+            margin-left: 18px;
+        }
+    }
+}

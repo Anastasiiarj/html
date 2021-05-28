@@ -1,0 +1,211 @@
+@import 'helpers/variables';
+@import 'base/base';
+@import 'layouts/header';
+
+.main {
+    padding: 100px 0;
+    @media (max-width: 768px) {
+        padding: 40px 0;
+    }
+
+    .container {
+        max-width: 1340px;
+    }
+}
+
+/*            Left block              */
+.left-block {
+    padding: 12px;
+    background-color: $white;
+    @media (min-width: 1200px) {
+        padding: 90px;
+        margin-left: 24px;
+    }
+}
+
+.info {
+    &-subtitle {
+        font-size: 17px;
+        line-height: 135%;
+        letter-spacing: 0.02em;
+        margin-bottom: 25px;
+    }
+
+    &-steps {
+        color: $grey;
+        font-size: 13px;
+        line-height: 145%;
+        letter-spacing: 0.02em;
+        padding-left: 0;
+        margin-top: 52px;
+
+        .number {
+            width: 50px;
+            height: 50px;
+            border: 1px solid $grey;
+            font-size: 17px;
+            line-height: 135%;
+            margin-bottom: 8px;
+            @media (min-width: 768px) {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        &-item {
+            text-align: center;
+            flex-direction: column;
+            margin-right: 15px;
+            @media (min-width: 768px) {
+                flex-direction: row;
+                margin-right: 45px;
+                text-align: left;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                color: $black;
+                .number {
+                    border-color: $black;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    margin-top: 62px;
+
+    .form {
+        letter-spacing: 0.02em;
+
+        &-control {
+            border: 0;
+            border-radius: 0;
+
+            &:focus {
+                border-bottom: 1px solid $pink;
+                box-shadow: none;
+            }
+        }
+
+        &-check {
+            margin-bottom: 1.5rem;
+
+            &-label {
+                font-size: 17px;
+                padding-left: 8px;
+                @media (min-width: 768px) {
+                    margin-left: 20px;
+                }
+            }
+
+            &-input {
+                width: 25px;
+                height: 25px;
+                margin-left: -33px;
+            }
+        }
+    }
+
+    .discount {
+        font-size: 13px;
+        margin: 57px 0 50px;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        &-info {
+            padding: 20px 25px;
+            background-color: #EAEEFF;
+            @media (min-width: 768px) {
+                margin-right: 37px;
+            }
+        }
+        &-promo {
+            color: #385BD7;
+            border-bottom: 1px dashed #385BD7;
+            white-space: nowrap;
+            text-align: center;
+            margin-top: .5rem;
+            @media (min-width: 768px) {
+                text-align: left;
+                margin-top: 0;
+            }
+            &:hover {
+                border-color: transparent;
+            }
+        }
+    }
+
+    .btn-main {
+        width: 100%;
+        max-width: 240px;
+        font-size: 13px;
+        line-height: 145%;
+        background-color: $pink;
+        color: $white;
+        padding: 20px 55px;
+        border-radius: 0;
+    }
+
+    .price {
+        margin-top: 47px;
+
+        &-number {
+            font-family: 'Montserrat-SemiBold';
+            font-size: 30px;
+            line-height: 37px;
+            margin-left: 35px;
+        }
+    }
+}
+
+/*            Right block              */
+
+.right-block {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 40px;  
+    @media (min-width: 992px) {
+        padding-top: 128px;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 50px;
+    } 
+    
+
+    .slick-arrow {
+        position: absolute;
+        right: 0;
+        transform: translateX(100%);
+        border: 0;
+        font-size: 0;
+        width: 23px;
+        height: 13px;
+    }
+
+    .slick-next {
+        top: 3px;
+        background: url(../images/arrow-next.svg) no-repeat center / contain;
+    }
+    .slick-prev {
+        bottom: 3px;
+        background: url(../images/arrow-prev.svg) no-repeat center / contain;
+    }
+
+    .users {
+        max-width: 180px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        &:last-child {
+            margin-top: 45px;
+        }
+    }
+}

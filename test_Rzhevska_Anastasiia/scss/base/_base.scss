@@ -1,0 +1,35 @@
+@import '../helpers/variables';
+@import '../base/fonts';
+
+body {
+    font-family: 'Montserrat-Medium';
+    background-color: #F0F1F7;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'Montserrat-SemiBold';
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+p {
+	margin-bottom: 1.5rem;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+.text-grey {
+    color: $grey;
+}
+
+.text-pink {
+    color: $pink;
+}

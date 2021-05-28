@@ -1,0 +1,343 @@
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#fontname") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg#fontname") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat-Medium';
+  background-color: #F0F1F7;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: 'Montserrat-SemiBold';
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.text-grey {
+  color: #6E7494;
+}
+
+.text-pink {
+  color: #FE337C;
+}
+
+.header {
+  background-color: #fff;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 88px;
+  }
+}
+
+.header .holder {
+  max-width: 1480px;
+}
+
+.header .navbar-brand {
+  margin-right: 46px;
+}
+
+.header .nav-link {
+  font-size: 13px;
+  line-height: 145%;
+}
+
+.header .notice {
+  margin-right: 40px;
+}
+
+.header .user {
+  font-size: 13px;
+  line-height: 145%;
+  color: #000;
+}
+
+.header .user-avatar {
+  margin-left: 18px;
+}
+
+.main {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 40px 0;
+  }
+}
+
+.main .container {
+  max-width: 1340px;
+}
+
+/*            Left block              */
+.left-block {
+  padding: 12px;
+  background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .left-block {
+    padding: 90px;
+    margin-left: 24px;
+  }
+}
+
+.info-subtitle {
+  font-size: 17px;
+  line-height: 135%;
+  letter-spacing: 0.02em;
+  margin-bottom: 25px;
+}
+
+.info-steps {
+  color: #6E7494;
+  font-size: 13px;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+  padding-left: 0;
+  margin-top: 52px;
+}
+
+.info-steps .number {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #6E7494;
+  font-size: 17px;
+  line-height: 135%;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .info-steps .number {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.info-steps-item {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .info-steps-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 45px;
+    text-align: left;
+  }
+}
+
+.info-steps-item:last-child {
+  margin-right: 0;
+}
+
+.info-steps-item.active {
+  color: #000;
+}
+
+.info-steps-item.active .number {
+  border-color: #000;
+}
+
+.content {
+  margin-top: 62px;
+}
+
+.content .form {
+  letter-spacing: 0.02em;
+}
+
+.content .form-control {
+  border: 0;
+  border-radius: 0;
+}
+
+.content .form-control:focus {
+  border-bottom: 1px solid #FE337C;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.content .form-check {
+  margin-bottom: 1.5rem;
+}
+
+.content .form-check-label {
+  font-size: 17px;
+  padding-left: 8px;
+}
+
+@media (min-width: 768px) {
+  .content .form-check-label {
+    margin-left: 20px;
+  }
+}
+
+.content .form-check-input {
+  width: 25px;
+  height: 25px;
+  margin-left: -33px;
+}
+
+.content .discount {
+  font-size: 13px;
+  margin: 57px 0 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .content .discount {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.content .discount-info {
+  padding: 20px 25px;
+  background-color: #EAEEFF;
+}
+
+@media (min-width: 768px) {
+  .content .discount-info {
+    margin-right: 37px;
+  }
+}
+
+.content .discount-promo {
+  color: #385BD7;
+  border-bottom: 1px dashed #385BD7;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+@media (min-width: 768px) {
+  .content .discount-promo {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+.content .discount-promo:hover {
+  border-color: transparent;
+}
+
+.content .btn-main {
+  width: 100%;
+  max-width: 240px;
+  font-size: 13px;
+  line-height: 145%;
+  background-color: #FE337C;
+  color: #fff;
+  padding: 20px 55px;
+  border-radius: 0;
+}
+
+.content .price {
+  margin-top: 47px;
+}
+
+.content .price-number {
+  font-family: 'Montserrat-SemiBold';
+  font-size: 30px;
+  line-height: 37px;
+  margin-left: 35px;
+}
+
+/*            Right block              */
+.right-block {
+  font-family: 'Montserrat-SemiBold';
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .right-block {
+    padding-top: 128px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .right-block {
+    padding-left: 50px;
+  }
+}
+
+.right-block .slick-arrow {
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  border: 0;
+  font-size: 0;
+  width: 23px;
+  height: 13px;
+}
+
+.right-block .slick-next {
+  top: 3px;
+  background: url(../images/arrow-next.svg) no-repeat center/contain;
+}
+
+.right-block .slick-prev {
+  bottom: 3px;
+  background: url(../images/arrow-prev.svg) no-repeat center/contain;
+}
+
+.right-block .users {
+  max-width: 180px;
+  margin-bottom: 40px;
+}
+
+.right-block p:last-child {
+  margin-top: 45px;
+}
+/*# sourceMappingURL=main.css.map */
